@@ -1,0 +1,78 @@
+# Lightbeam
+
+> Lightbeam is an AI data security and guardrails platform. It discovers and classifies
+> sensitive data across cloud, SaaS and on-premises systems, ties that data to identity
+> and access context through a "Data Identity Graph", and enforces guardrails on how
+> users, applications, copilots and AI agents reach it. The company was founded by former
+> Nutanix leaders and is backed by Vertex Ventures US, 8VC, Village Global, Monta Vista
+> Capital and Dropbox.
+
+generated: 2026-07-19
+method: generated
+source: apis.yml + https://www.lightbeam.ai/ (no provider-published /llms.txt; HTTP 404)
+
+## Important note for agents
+
+Lightbeam publishes **no public API**. As of this writing there is no public developer
+portal, no OpenAPI or AsyncAPI description, no public SDK or package, no MCP server, and
+no public status page. The documentation host `docs.lightbeam.ai` exists but is
+authentication-gated (HTTP 401) and is available to customers only. Do not assume or
+synthesize endpoints, authentication schemes, or scopes for this provider.
+
+## Platform capabilities
+
+- AI Security — detects shadow AI use, inspects prompts and uploaded files, and blocks
+  sensitive data from reaching unauthorized GenAI platforms.
+- Data Security Posture Management (DSPM) — discovers sensitive data and its exposure
+  across cloud, SaaS and on-premises environments.
+- Data Classification — classifies and labels sensitive data, including distinguishing
+  real from synthetic data.
+- Risk Scoring — prioritizes risk by sensitivity, access pattern, destination, identity
+  and business impact.
+- Automated Remediation — blocks, alerts, quarantines or minimizes risky exposure.
+- Access Governance — controls which users, applications, copilots and agents can reach
+  sensitive data.
+- Privacy at Scale — connects data usage to privacy obligations, retention policy and
+  audit requirements.
+- Data Retention — removes unnecessary or risky data.
+- Breach & Ransomware Protection — limits incident blast radius.
+- User Entity Behavior Analytics (UEBA) — detects anomalous behavior by users, agents
+  and applications around sensitive data.
+- Data Identity Graph — the underlying model connecting sensitive data to identity,
+  access context, business requirement and AI usage.
+
+## Primary links
+
+- Website: https://www.lightbeam.ai/
+- Platform overview: https://www.lightbeam.ai/platform/
+- Integrations: https://www.lightbeam.ai/platform/integrations/
+- Solutions: https://www.lightbeam.ai/solutions/
+- Resource center: https://www.lightbeam.ai/resources/
+- Blog: https://www.lightbeam.ai/resources?type=post
+- Company overview: https://www.lightbeam.ai/company/
+- Partners: https://www.lightbeam.ai/company/partners/
+- Careers: https://www.lightbeam.ai/company/careers/
+- Contact: https://www.lightbeam.ai/contact/
+- Trust Center (privacy policy): https://www.lightbeam.ai/trust/
+- Privacy Policy: https://www.lightbeam.ai/privacy-policy/
+- Terms of Service: https://www.lightbeam.ai/tos/
+
+## Regulatory solution areas
+
+These are compliance outcomes the product is marketed to help customers achieve. They
+are not certifications Lightbeam publishes about itself.
+
+- GDPR: https://www.lightbeam.ai/solutions/regulations/gdpr/
+- CCPA: https://www.lightbeam.ai/solutions/regulations/ccpa/
+- HIPAA: https://www.lightbeam.ai/solutions/regulations/hipaa/
+- Quebec Law 25: https://www.lightbeam.ai/solutions/regulations/quebecs-law-25/
+- EU AI Act: https://www.lightbeam.ai/privacy/eu-ai-act-compliance/
+
+## API Evangelist artifacts in this repo
+
+- apis.yml — APIs.json profile for Lightbeam
+- security/lightbeam-ai-domain-security.yml — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture
+- security/lightbeam-ai-trust-center.yml — trust surface review
+- security/lightbeam-ai-vulnerability-disclosure.yml — VDP probe (none published)
+- well-known/lightbeam-ai-well-known.yml — /.well-known/ probe index (all 404)
+- llms/lightbeam-ai-llms.txt — this file

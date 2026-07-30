@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.lightbeam.ai/trust/
+url: https://www.lightbeam.ai/trust/
+# CORRECTION (2026-07-19 manual review): the automated probe read PCI DSS / HIPAA /
+# GDPR off this page and recorded them as certifications held. Manual review of the
+# rendered page shows those strings come from the site-wide "Solutions > Regulations"
+# navigation menu, not from any attestation Lightbeam publishes about itself. The
+# page titled "Trust Center" is in substance a privacy policy (data collected, how it
+# is used, storage/retention, data-subject rights). No named certification (SOC 2,
+# ISO 27001, PCI DSS, HIPAA, FedRAMP, HITRUST) is claimed for Lightbeam itself, and
+# no subprocessor list or third-party trust portal is linked from it.
+certifications: []
+certifications_published: false
+subprocessor_list: false
+trust_portal: false
+notes: >-
+  Page is a privacy policy published under the "Trust Center" title. Regulatory
+  frameworks named on the page (GDPR, CCPA, PCI/DSS, Quebec Law 25, HIPAA) are
+  the compliance outcomes the Lightbeam product helps customers address - they
+  are solution pages, not attestations the company holds.
+regulatory_solution_areas:
+- name: GDPR
+  url: https://www.lightbeam.ai/solutions/regulations/gdpr/
+- name: CCPA
+  url: https://www.lightbeam.ai/solutions/regulations/ccpa/
+- name: HIPAA
+  url: https://www.lightbeam.ai/solutions/regulations/hipaa/
+- name: Quebec Law 25
+  url: https://www.lightbeam.ai/solutions/regulations/quebecs-law-25/
+- name: EU AI Act
+  url: https://www.lightbeam.ai/privacy/eu-ai-act-compliance/
+- name: PCI DSS
+  url: https://www.lightbeam.ai/solutions/regulations/
+privacy_contact_documented: true
+evidence:
+- source: https://www.lightbeam.ai/trust/
+  http_status: 200
+  finding: >-
+    Privacy policy content; data-subject rights process with a stated one-month
+    response target and a privacy email contact. No certification names asserted
+    for Lightbeam as an organization.
+- source: https://www.lightbeam.ai/page-sitemap.xml
+  http_status: 200
+  finding: Regulation solution pages enumerated (GDPR, CCPA, HIPAA, Law 25, EU AI Act).

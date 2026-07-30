@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of hosts in apis.yml
+notes: >-
+  No /.well-known/ resources are published on the Lightbeam apex host. All five
+  standard paths return 404. The documentation host (docs.lightbeam.ai) is
+  authentication-gated (401) and could not be probed for well-known resources.
+  Empty is a valid, expected result for an enterprise SaaS with no public API.
+hosts:
+- host: lightbeam.ai
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+- host: docs.lightbeam.ai
+  reachable: true
+  status: 401
+  probed: false
+  note: Documentation portal requires authentication; not publicly probeable.
+- host: api.lightbeam.ai
+  reachable: false
+  status: null
+  note: Host does not resolve.
+- host: developer.lightbeam.ai
+  reachable: false
+  status: null
+  note: Host does not resolve.
+- host: status.lightbeam.ai
+  reachable: false
+  status: null
+  note: Host does not resolve.
