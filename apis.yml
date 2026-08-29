@@ -10,6 +10,17 @@ description: Lightbeam is an AI data security and guardrails platform that disco
   analytics. Founded by former Nutanix leaders and backed by Vertex Ventures US, 8VC,
   Village Global, Monta Vista Capital and Dropbox. Lightbeam sells to the enterprise and
   publishes no public API - its documentation portal is authentication-gated.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
