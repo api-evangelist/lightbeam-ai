@@ -34,6 +34,9 @@ accessModel:
   method: derived
 image: https://www.lightbeam.ai/wp-content/uploads/2025/09/lihtbeam-default-og.png
 url: https://raw.githubusercontent.com/api-evangelist/lightbeam-ai/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Lightbeam sells to the enterprise and publishes no public API - its documentation portal is authentication-gated."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
